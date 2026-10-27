@@ -5,18 +5,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#090717">
-<title>SONU VIP STORE | RGB Gaming</title>
-
+<title>SONU VIP STORE | Rainbow RGB Gaming</title>
 <style>
 :root{
   color-scheme:dark;
   --bg:#090717;
-  --surface:#171333;
   --muted:#c4bddb;
   --white:#fff;
   --cyan:#43eaff;
 }
-
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{
@@ -27,7 +24,6 @@ body{
   font:15px/1.55 system-ui,-apple-system,Segoe UI,Arial,sans-serif;
   overflow-x:hidden;
 }
-
 body::before{
   content:"";
   position:fixed;
@@ -35,14 +31,13 @@ body::before{
   z-index:-2;
   pointer-events:none;
   background:
-   radial-gradient(circle at 20% 30%,#a600ff55,transparent 30%),
-   radial-gradient(circle at 80% 20%,#00d9ff55,transparent 32%),
-   radial-gradient(circle at 60% 80%,#ff217755,transparent 31%),
-   radial-gradient(circle at 15% 80%,#28ffb655,transparent 26%),
-   #090717;
+    radial-gradient(circle at 20% 30%,#a600ff55,transparent 30%),
+    radial-gradient(circle at 80% 20%,#00d9ff55,transparent 32%),
+    radial-gradient(circle at 60% 80%,#ff217755,transparent 31%),
+    radial-gradient(circle at 15% 80%,#28ffb655,transparent 26%),
+    #090717;
   animation:skyShift 20s ease-in-out infinite alternate;
 }
-
 body::after{
   content:"";
   position:fixed;
@@ -51,33 +46,24 @@ body::after{
   pointer-events:none;
   opacity:.13;
   background-image:
-   linear-gradient(#b6a0ff33 1px,transparent 1px),
-   linear-gradient(90deg,#b6a0ff33 1px,transparent 1px);
+    linear-gradient(#b6a0ff33 1px,transparent 1px),
+    linear-gradient(90deg,#b6a0ff33 1px,transparent 1px);
   background-size:38px 38px;
   mask-image:linear-gradient(to bottom,black,transparent);
 }
-
 @keyframes skyShift{
   from{transform:translate(-3%,0) rotate(0deg)}
   to{transform:translate(3%,2%) rotate(12deg)}
 }
-
 @keyframes rgbMove{
   0%{background-position:0% 50%}
   50%{background-position:100% 50%}
   100%{background-position:0% 50%}
 }
-
-@keyframes glowPulse{
-  0%,100%{filter:brightness(1)}
-  50%{filter:brightness(1.16)}
-}
-
 @keyframes floating{
   0%,100%{transform:translateY(0)}
   50%{transform:translateY(-5px)}
 }
-
 button,input{font:inherit}
 button{cursor:pointer}
 button:disabled{opacity:.5;cursor:not-allowed}
@@ -85,14 +71,12 @@ button:focus-visible,input:focus-visible{
   outline:3px solid var(--cyan);
   outline-offset:3px;
 }
-
 .wrap{
   position:relative;
   max-width:1130px;
   margin:auto;
   padding:20px 18px 65px;
 }
-
 .top{
   display:flex;
   align-items:center;
@@ -100,7 +84,6 @@ button:focus-visible,input:focus-visible{
   gap:12px;
   flex-wrap:wrap;
 }
-
 .brand{
   display:flex;
   align-items:center;
@@ -109,7 +92,6 @@ button:focus-visible,input:focus-visible{
   font-weight:950;
   letter-spacing:1.2px;
 }
-
 .logo{
   display:grid;
   place-items:center;
@@ -122,7 +104,6 @@ button:focus-visible,input:focus-visible{
   animation:rgbMove 7s linear infinite;
   box-shadow:0 0 23px #9f51ff88;
 }
-
 .brand em{
   font-style:normal;
   background:linear-gradient(90deg,#ff72ca,#a887ff,#4deaff,#57ffaa);
@@ -130,7 +111,6 @@ button:focus-visible,input:focus-visible{
   background-clip:text;
   color:transparent;
 }
-
 .demo{
   border:1px solid #b283f5;
   color:#ead9ff;
@@ -139,9 +119,7 @@ button:focus-visible,input:focus-visible{
   padding:7px 12px;
   font-size:10px;
   font-weight:850;
-  letter-spacing:.5px;
 }
-
 .rgb-line{
   height:3px;
   margin:20px 0 0;
@@ -151,12 +129,10 @@ button:focus-visible,input:focus-visible{
   animation:rgbMove 5s linear infinite;
   box-shadow:0 0 15px #8b62ff88;
 }
-
 .hero{
   text-align:center;
   padding:65px 10px 40px;
 }
-
 .eyebrow{
   display:inline-flex;
   align-items:center;
@@ -170,7 +146,6 @@ button:focus-visible,input:focus-visible{
   letter-spacing:1.5px;
   color:#e6ceff;
 }
-
 .hero h1{
   margin:20px 0 15px;
   font-size:clamp(38px,8vw,76px);
@@ -178,7 +153,6 @@ button:focus-visible,input:focus-visible{
   line-height:1.05;
   letter-spacing:-2px;
 }
-
 .gradient{
   background:linear-gradient(90deg,#ff498a,#ffcb4d,#5dffb0,#48dfff,#c477ff,#ff498a);
   background-size:300% 100%;
@@ -187,14 +161,12 @@ button:focus-visible,input:focus-visible{
   color:transparent;
   animation:rgbMove 7s linear infinite;
 }
-
 .hero p{
   max-width:640px;
   margin:auto;
   font-size:15px;
   color:var(--muted);
 }
-
 .hero-bits{
   display:flex;
   justify-content:center;
@@ -202,7 +174,6 @@ button:focus-visible,input:focus-visible{
   gap:10px;
   margin-top:28px;
 }
-
 .bit{
   border:1px solid #5b518d;
   border-radius:30px;
@@ -211,7 +182,6 @@ button:focus-visible,input:focus-visible{
   background:#14122fc9;
   color:#ebe5ff;
 }
-
 .pulse{
   display:inline-block;
   width:8px;
@@ -221,46 +191,37 @@ button:focus-visible,input:focus-visible{
   background:#53ffa8;
   box-shadow:0 0 13px #53ffa8;
 }
-
 .sectionhead{
   text-align:center;
   margin:25px 0 35px;
 }
-
 .sectionhead .mini{
   font-size:11px;
   font-weight:900;
   letter-spacing:2.3px;
   color:#57edff;
 }
-
 .sectionhead h2{
   margin:5px 0;
   font-size:clamp(26px,4vw,36px);
 }
-
 .sectionhead p{
   color:var(--muted);
   font-size:13px;
 }
-
 .plans{
   display:grid;
   grid-template-columns:repeat(3,minmax(0,1fr));
   gap:18px;
 }
-
-.plan,
-.howcard,
-.checkout{
+.plan,.howcard,.checkout{
   background:
-   linear-gradient(145deg,#201a43,#0e1028) padding-box,
-   linear-gradient(120deg,#ff3b87,#a657ff,#25dfff,#3dffa8,#ffe34d,#ff3b87) border-box;
+    linear-gradient(145deg,#201a43,#0e1028) padding-box,
+    linear-gradient(120deg,#ff3b87,#a657ff,#25dfff,#3dffa8,#ffe34d,#ff3b87) border-box;
   background-size:100% 100%,400% 400%;
   border:2px solid transparent;
   animation:rgbMove 8s linear infinite;
 }
-
 .plan{
   position:relative;
   padding:25px 22px;
@@ -268,16 +229,13 @@ button:focus-visible,input:focus-visible{
   box-shadow:0 12px 38px #0007,0 0 21px #9f4eff28;
   transition:transform .2s,box-shadow .2s;
 }
-
 .plan:hover{
   transform:translateY(-5px);
   box-shadow:0 15px 40px #0009,0 0 27px #b65cff66;
 }
-
 .plan.featured{
   box-shadow:0 0 30px #32d9ff55,0 14px 40px #0008;
 }
-
 .ribbon{
   position:absolute;
   top:-15px;
@@ -291,15 +249,12 @@ button:focus-visible,input:focus-visible{
   color:#fff;
   font-size:10px;
   font-weight:950;
-  letter-spacing:1px;
 }
-
 .plan-header{
   display:flex;
   align-items:center;
   gap:12px;
 }
-
 .planicon{
   display:grid;
   place-items:center;
@@ -310,43 +265,36 @@ button:focus-visible,input:focus-visible{
   font-size:25px;
   animation:floating 4s ease-in-out infinite;
 }
-
 .planname{
   color:#d3caef;
   font-size:13px;
   font-weight:850;
   letter-spacing:1px;
 }
-
 .plandays{
   font-size:24px;
   font-weight:950;
 }
-
 .price{
   margin-top:23px;
   font-size:36px;
   font-weight:950;
 }
-
 .price small{
   font-size:14px;
   color:#dacaff;
   margin-right:4px;
 }
-
 .perday{
   margin-top:0;
   color:var(--muted);
   font-size:12px;
 }
-
 .rule{
   height:1px;
   background:#635182;
   margin:20px 0;
 }
-
 .benefit{
   display:flex;
   gap:10px;
@@ -354,14 +302,11 @@ button:focus-visible,input:focus-visible{
   font-size:13px;
   color:#e3dff5;
 }
-
 .tick{
   color:#5dffbd;
   font-weight:950;
 }
-
-.buy,
-.cta{
+.buy,.cta{
   display:flex;
   align-items:center;
   justify-content:center;
@@ -375,20 +320,16 @@ button:focus-visible,input:focus-visible{
   animation:rgbMove 6s linear infinite;
   box-shadow:0 0 19px #9948ff66;
   font-weight:950;
-  letter-spacing:.3px;
   padding:12px 15px;
 }
-
 .buy{margin-top:23px}
 .buy:hover,.cta:hover{filter:brightness(1.2)}
-
 .how{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:13px;
   margin:45px 0 20px;
 }
-
 .howcard{
   display:flex;
   align-items:flex-start;
@@ -400,7 +341,6 @@ button:focus-visible,input:focus-visible{
     linear-gradient(120deg,#a855f7,#36e4ff,#ff4399,#a855f7) border-box;
   background-size:100% 100%,300% 300%;
 }
-
 .stepno{
   display:grid;
   place-items:center;
@@ -412,19 +352,16 @@ button:focus-visible,input:focus-visible{
   color:#6cefff;
   font-weight:950;
 }
-
 .howcard strong{
   display:block;
   font-size:13px;
 }
-
 .howcard span{
   display:block;
   color:var(--muted);
   font-size:12px;
   margin-top:4px;
 }
-
 .checkout{
   max-width:760px;
   margin:35px auto 0;
@@ -433,10 +370,7 @@ button:focus-visible,input:focus-visible{
   scroll-margin-top:20px;
   box-shadow:0 0 38px #903dff44;
 }
-
-.checkout[hidden],
-.result[hidden]{display:none}
-
+.checkout[hidden],.result[hidden]{display:none}
 .checkouttop{
   display:flex;
   justify-content:space-between;
@@ -444,12 +378,10 @@ button:focus-visible,input:focus-visible{
   flex-wrap:wrap;
   gap:12px;
 }
-
 .checkout h2{
   margin:0;
   font-size:24px;
 }
-
 .pricepill{
   background:#103654;
   border:1px solid #37cfff;
@@ -459,7 +391,6 @@ button:focus-visible,input:focus-visible{
   font-size:13px;
   font-weight:900;
 }
-
 .fieldlabel{
   display:block;
   color:#e4d3ff;
@@ -469,7 +400,6 @@ button:focus-visible,input:focus-visible{
   text-transform:uppercase;
   margin:23px 0 9px;
 }
-
 .field{
   width:100%;
   padding:14px 15px;
@@ -478,15 +408,12 @@ button:focus-visible,input:focus-visible{
   background:#120f2f;
   color:#fff;
 }
-
 .field::placeholder{color:#9990b4}
-
 .methods{
   display:grid;
   grid-template-columns:repeat(3,1fr);
   gap:10px;
 }
-
 .method{
   text-align:center;
   background:#191539;
@@ -496,17 +423,14 @@ button:focus-visible,input:focus-visible{
   min-height:90px;
   cursor:pointer;
 }
-
 .method:has(input:checked){
   border-color:#54eaff;
   box-shadow:0 0 17px #19dfff55;
   background:#15294a;
 }
-
 .method input{accent-color:#49e6ff}
 .method b{display:block;font-size:23px}
 .method span{display:block;font-size:12px;font-weight:800}
-
 .info{
   border:1px solid #635194;
   border-radius:13px;
@@ -516,15 +440,12 @@ button:focus-visible,input:focus-visible{
   margin-top:15px;
   font-size:13px;
 }
-
 .warn{
   border-color:#ab7959;
   background:#39251c99;
   color:#ffdeb7;
 }
-
 .cta{margin-top:20px}
-
 .result{
   margin-top:20px;
   padding:19px;
@@ -532,12 +453,10 @@ button:focus-visible,input:focus-visible{
   border-radius:17px;
   background:#0d243c;
 }
-
 .result h3{
   color:#a4faff;
   margin:0 0 10px;
 }
-
 .cred{
   border:1px solid #57668e;
   border-radius:11px;
@@ -545,20 +464,25 @@ button:focus-visible,input:focus-visible{
   padding:10px 12px;
   margin-top:10px;
 }
-
 .cred span{
   display:block;
   color:#c6d1e6;
   font-size:11px;
   margin-bottom:3px;
 }
-
 .cred code{
   color:#fff;
   font-size:13px;
   word-break:break-all;
 }
-
+.cred.expiry{
+  border-color:#67efb5;
+  background:#103d35;
+}
+.cred.expiry code{
+  color:#a3ffdb;
+  font-weight:900;
+}
 .copy{
   padding:10px 14px;
   border:1px solid #a58bff;
@@ -568,18 +492,14 @@ button:focus-visible,input:focus-visible{
   margin-top:12px;
   font-weight:850;
 }
-
 .muted{color:var(--muted);font-size:12px}
-
 footer{
   margin-top:55px;
   text-align:center;
   font-size:12px;
   color:#aea2cb;
 }
-
 footer strong{color:#e0caff}
-
 @media(max-width:760px){
   .plans{
     grid-template-columns:1fr;
@@ -598,11 +518,8 @@ footer strong{color:#e0caff}
   .method{padding:10px 4px;min-height:84px}
   .method span{font-size:11px}
 }
-
 @media(prefers-reduced-motion:reduce){
-  *,
-  *::before,
-  *::after{
+  *,*::before,*::after{
     animation:none!important;
     transition:none!important;
     scroll-behavior:auto!important;
@@ -639,6 +556,7 @@ footer strong{color:#e0caff}
     <span class="bit"><span class="pulse"></span> Demo Store Online</span>
     <span class="bit">🌈 Rainbow RGB Gaming</span>
     <span class="bit">⚡ Instant Demo Keys</span>
+    <span class="bit">📅 Demo Expiry Preview</span>
   </div>
 </section>
 
@@ -650,7 +568,6 @@ footer strong{color:#e0caff}
   </div>
 
   <div class="plans">
-
     <article class="plan">
       <div class="plan-header">
         <div class="planicon">⚡</div>
@@ -708,7 +625,6 @@ footer strong{color:#e0caff}
         GET BEST VALUE ↗
       </button>
     </article>
-
   </div>
 </section>
 
@@ -731,7 +647,7 @@ footer strong{color:#e0caff}
     <span class="stepno">03</span>
     <div>
       <strong>See demo credentials</strong>
-      <span>Test-only username and key, not valid in app.</span>
+      <span>Test username, key and expiry preview.</span>
     </div>
   </div>
 </div>
@@ -756,22 +672,18 @@ footer strong{color:#e0caff}
     >
 
     <div class="fieldlabel">Choose payment method</div>
-
     <div class="methods">
       <label class="method">
         <input type="radio" name="pay" value="Card" checked>
-        <b>💳</b>
-        <span>Card</span>
+        <b>💳</b><span>Card</span>
       </label>
       <label class="method">
         <input type="radio" name="pay" value="LANKAQR">
-        <b>▦</b>
-        <span>LANKAQR</span>
+        <b>▦</b><span>LANKAQR</span>
       </label>
       <label class="method">
         <input type="radio" name="pay" value="eZ Cash">
-        <b>📱</b>
-        <span>eZ Cash</span>
+        <b>📱</b><span>eZ Cash</span>
       </label>
     </div>
 
@@ -782,8 +694,8 @@ footer strong{color:#e0caff}
     <div class="info warn">
       <strong>⚠ DEMO ONLY</strong>
       <div>
-        No real card charge, bank QR, wallet transfer,
-        payment verification or activation.
+        No real payment, payment verification or activation.
+        All generated credentials and dates are previews.
         Never enter card details, PIN, OTP or bank credentials here.
       </div>
     </div>
@@ -818,123 +730,150 @@ const result=document.getElementById('result');
 const info=document.getElementById('methodInfo');
 
 const messages={
- Card:'💳 Card checkout is a demo. No card number or OTP is requested.',
- LANKAQR:'▦ LANKAQR preview only. No merchant QR is connected; do not send money.',
- 'eZ Cash':'📱 eZ Cash preview only. No wallet or merchant account is connected.'
+  Card:'💳 Card checkout is a demo. No card number or OTP is requested.',
+  LANKAQR:'▦ LANKAQR preview only. No merchant QR is connected; do not send money.',
+  'eZ Cash':'📱 eZ Cash preview only. No wallet or merchant account is connected.'
 };
 
 document.querySelectorAll('[data-days]').forEach(button=>{
- button.addEventListener('click',()=>{
-  days=Number(button.dataset.days);
-  price=Number(button.dataset.price);
+  button.addEventListener('click',()=>{
+    days=Number(button.dataset.days);
+    price=Number(button.dataset.price);
 
-  document.getElementById('total').textContent=
-   'Rs. '+price.toLocaleString('en-LK');
+    document.getElementById('total').textContent=
+      'Rs. '+price.toLocaleString('en-LK');
 
-  document.getElementById('selected').textContent=
-   days+' DAYS VIP • DEMO CHECKOUT';
+    document.getElementById('selected').textContent=
+      days+' DAYS VIP • DEMO CHECKOUT';
 
-  result.hidden=true;
-  checkout.hidden=false;
-  checkout.scrollIntoView({
-   behavior:'smooth',
-   block:'start'
+    result.hidden=true;
+    checkout.hidden=false;
+    checkout.scrollIntoView({
+      behavior:'smooth',
+      block:'start'
+    });
   });
- });
 });
 
 form.querySelectorAll('[name="pay"]').forEach(radio=>{
- radio.addEventListener('change',()=>{
-  const selected=form.querySelector('[name="pay"]:checked').value;
-  info.textContent=messages[selected];
- });
+  radio.addEventListener('change',()=>{
+    const selected=form.querySelector('[name="pay"]:checked').value;
+    info.textContent=messages[selected];
+  });
 });
 
 function make(tag,text,className){
- const element=document.createElement(tag);
- if(text!=null)element.textContent=text;
- if(className)element.className=className;
- return element;
+  const element=document.createElement(tag);
+  if(text!=null)element.textContent=text;
+  if(className)element.className=className;
+  return element;
+}
+
+function formatDate(date){
+  return new Intl.DateTimeFormat('en-GB',{
+    timeZone:'Asia/Colombo',
+    day:'2-digit',
+    month:'short',
+    year:'numeric',
+    hour:'2-digit',
+    minute:'2-digit',
+    hour12:true
+  }).format(date)+' (Sri Lanka)';
+}
+
+function credentialCard(title,value,extraClass){
+  const card=make('div',null,'cred'+(extraClass?' '+extraClass:''));
+  card.append(
+    make('span',title),
+    make('code',value)
+  );
+  return card;
 }
 
 form.addEventListener('submit',event=>{
- event.preventDefault();
+  event.preventDefault();
 
- if(!days)return;
+  if(!days)return;
 
- const customer=document.getElementById('customer');
- const raw=customer.value.trim();
+  const customer=document.getElementById('customer');
+  const raw=customer.value.trim();
 
- if(!raw){
-  customer.focus();
-  return;
- }
-
- const safe=raw.toLowerCase()
-  .replace(/[^a-z0-9]/g,'')
-  .slice(0,12)||'guest';
-
- const random=new Uint8Array(10);
- crypto.getRandomValues(random);
-
- const hex=Array.from(random,byte=>
-  byte.toString(16).padStart(2,'0').toUpperCase()
- ).join('');
-
- const username='demo_'+safe+'_'+hex.slice(0,4);
- const key='DEMO-'+hex.match(/.{1,4}/g).join('-');
- const method=form.querySelector('[name="pay"]:checked').value;
-
- result.replaceChildren(
-  make('h3','✓ Demo Checkout Complete'),
-  make('p',
-   `${days} days • Rs. ${price.toLocaleString('en-LK')} • ${method}`)
- );
-
- [
-  ['DEMO USERNAME',username],
-  ['DEMO ACTIVATION KEY (NOT VALID IN APP)',key]
- ].forEach(([title,value])=>{
-  const card=make('div',null,'cred');
-  card.append(
-   make('span',title),
-   make('code',value)
-  );
-  result.append(card);
- });
-
- const copy=make('button','COPY DEMO CREDENTIALS','copy');
- copy.type='button';
-
- copy.addEventListener('click',async()=>{
-  const text=
-   `Username: ${username}\n`+
-   `Activation Key: ${key}\n`+
-   `DEMO ONLY — NOT VALID IN APP`;
-
-  try{
-   await navigator.clipboard.writeText(text);
-   copy.textContent='✓ COPIED';
-  }catch{
-   copy.textContent='Select and copy credentials above';
+  if(!raw){
+    customer.focus();
+    return;
   }
- });
 
- result.append(
-  copy,
-  make(
-   'p',
-   'These values are random test data. They are not saved in Supabase and cannot unlock the actual app.',
-   'muted'
-  )
- );
+  const safe=raw.toLowerCase()
+    .replace(/[^a-z0-9]/g,'')
+    .slice(0,12)||'guest';
 
- result.hidden=false;
+  const random=new Uint8Array(10);
+  crypto.getRandomValues(random);
 
- result.scrollIntoView({
-  behavior:'smooth',
-  block:'nearest'
- });
+  const hex=Array.from(random,byte=>
+    byte.toString(16).padStart(2,'0').toUpperCase()
+  ).join('');
+
+  const username='demo_'+safe+'_'+hex.slice(0,4);
+  const key='DEMO-'+hex.match(/.{1,4}/g).join('-');
+
+  const method=form.querySelector('[name="pay"]:checked').value;
+
+  // DEMO-ONLY DATES: no actual VIP account is activated.
+  const demoStart=new Date();
+  const demoExpiry=new Date(
+    demoStart.getTime()+days*24*60*60*1000
+  );
+
+  const startText=formatDate(demoStart);
+  const expiryText=formatDate(demoExpiry);
+
+  result.replaceChildren(
+    make('h3','✓ Demo Checkout Complete'),
+    make('p',
+      `${days} days • Rs. ${price.toLocaleString('en-LK')} • ${method}`
+    ),
+    credentialCard('DEMO USERNAME',username),
+    credentialCard('DEMO ACTIVATION KEY (NOT VALID IN APP)',key),
+    credentialCard('DEMO ACTIVATION DATE',startText),
+    credentialCard('DEMO EXPIRY DATE',expiryText,'expiry')
+  );
+
+  const copy=make('button','COPY DEMO DETAILS','copy');
+  copy.type='button';
+
+  copy.addEventListener('click',async()=>{
+    const text=[
+      `Username: ${username}`,
+      `Activation Key: ${key}`,
+      `Package: ${days} Days`,
+      `Demo Start: ${startText}`,
+      `Demo Expiry: ${expiryText}`,
+      'DEMO ONLY — NOT VALID IN APP'
+    ].join('\n');
+
+    try{
+      await navigator.clipboard.writeText(text);
+      copy.textContent='✓ COPIED';
+    }catch{
+      copy.textContent='Select and copy details above';
+    }
+  });
+
+  result.append(
+    copy,
+    make(
+      'p',
+      'PREVIEW ONLY: These credentials and dates are not saved in Supabase, do not confirm payment, and cannot unlock the actual app. Real expiry begins only after verified activation.',
+      'muted'
+    )
+  );
+
+  result.hidden=false;
+  result.scrollIntoView({
+    behavior:'smooth',
+    block:'nearest'
+  });
 });
 
 })();
